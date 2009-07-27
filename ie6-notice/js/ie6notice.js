@@ -23,7 +23,7 @@ function ie6Notice()
 	var head, body, noticeDiv, noticeParagraph, noticeText;
 
 	/*------------------------------
-	Check gebtn support
+	Check getElementsByTagName support
 	------------------------------*/
 	if(!document.getElementsByTagName) { return; }
 
