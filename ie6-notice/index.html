@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>IE6 Notice</title>
+		<link rel="stylesheet" href="css/screen.css" />
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>IE6 Notice is a 2kb Javascript file that adds a notice for site visitors using Internet Explorer 6.</h1> 
+			</header>
+
+			<section>
+
+				<h2>Why should I use this?</h2>
+				<p>Internet Explorer 6 was released on August 27, 2001. Almost nine years later the web has moved on but Internet Explorer is still widely used, especially in corporate environments. It is time that users were encouraged to upgrade from Internet Explorer.</p>
+				<h2>What does it look like?</h2>
+				<p><img src="images/ie6notice_example.png" alt="How IE6 Notice displays" /></p>
+
+				<h2>Adding IE6 Notice to your site</h2>
+
+				<p>To add IE6 Notice to your site just add this code before the closing body tag of your HTML.</p> 
+				<code>
+					&lt;!--[if IE 6]&gt;<br />
+					&lt;script type="text/javascript" src="http://shapeshed.github.com/ie6-notice/ie6notice-1.0.0.min.js"&gt;&lt;/script&gt;<br />
+					&lt;![endif]--&gt;
+				</code>
+				<p>This code generates the message for IE6 users.</p>
+				<h2>Roll your own</h2>
+
+				<p>Don't like the style? You can override the styles of the notice with your own custom CSS. The following elements can be styled:</p.
+				<ul>
+				<li>#ie6-notice - the div containing the notice</li>
+				<li>#ie6-notice p#ie6-text - the paragraph containing the notice text</li>
+				<li>#ie6-notice p#ie6-hide-notice a - the hide this notice link</li>
+				</ul>
+
+				<h2>Bug Reports and Source</h2>
+
+				<p>Bug reporting and issue tracking is handled via <a href="http://shapeshed.lighthouseapp.com/projects/34369-ie6-notice/overview">Lighthouse</a></p>
+
+				<p>The source code can be downloaded from the <a href="http://github.com/shapeshed/ie6-notice/">Github repository</a>.</p>
+
+				<h2>Who created this?</h2>
+
+				<p>IE6 Notice was created by <a href="http://shapeshed.com/">George Ornbo</a>, a freelance web developer from London, UK. <a href="http://twitter.com/shapeshed">Follow me on Twitter</a> if you like.</p>
+
+				<h2>License</h2>
+				<p>The project is licensed under an <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></p>
+			</section>
+
+		</div>
+
+	</body>
+</html>
