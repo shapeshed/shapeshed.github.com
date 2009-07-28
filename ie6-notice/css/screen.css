@@ -141,7 +141,10 @@ code
 	margin-bottom: 1.5em;
 }
 
-
+object
+	{
+	margin-bottom: 1.5em;	
+}
 
 abbr {
 	speak: spell-out;
