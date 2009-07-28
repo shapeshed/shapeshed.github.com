@@ -41,6 +41,7 @@ function ie6Notice()
 	ie6Css.setAttribute("href", "http://shapeshed.github.com/ie6-notice/css/ie6_notice.css");
 	ie6Css.setAttribute("type", "text/css");	
 	ie6Css.setAttribute("media", "screen");	
+
 	head.appendChild(ie6Css); 
 	
 	/*------------------------------
@@ -66,8 +67,8 @@ function ie6Notice()
 	/*------------------------------
 	Create and insert notice text
 	------------------------------*/
-	noticeText = document.createTextNode('You appear to be browsing this site using Internet Explorer 6. This browser is now out of date and it is recommended that you upgrade to Firefox');
-	noticeParagraph.appendChild(noticeText);
+	noticeText = 'You appear to be browsing this site using Internet Explorer 6. This browser is now out of date. For safer, more reliable browsing it is recommended that you upgrade your browser to to <a href="http://www.mozilla.com/firefox/">Firefox</a>, <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.opera.com/">Opera</a>, or <a href="http://www.microsoft.com/windows/internet-explorer/">Internet Explorer 8</a>  ';
+	noticeParagraph.innerHTML=noticeText;
 
 	/*------------------------------
 	Create and insert hide paragraph
@@ -90,10 +91,11 @@ function ie6Notice()
 	hideLink.appendChild(hideText);
 	
 	hideParagraph.onclick = function(){
-        	alert('hi there');
 			var today = new Date(); 
 			var expiry = new Date(today.getTime() + 30 * 86400 * 1000);
 			document.cookie = name + "=" + "ie6Notice" + "; expires=" + expiry.toGMTString() + "; path=/"; 
+			noticeDiv.style.display="none";
+			ie6Css.setAttribute("href", "");
 	        return false;
 	    }
 		
