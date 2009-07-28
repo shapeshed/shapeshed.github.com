@@ -36,6 +36,7 @@ website:   http://shapeshed.com
 	margin: 0;
 	background: #ffffcc;
 	filter: alpha(opacity=95);
+	z-index: 1000;
 }
 #ie6-notice p#ie6-text
 	{
