@@ -41,13 +41,13 @@ body
 }
 #wrapper
 	{ 
-	width: 960px; /* Set page width here - you can also use percentage */
+	width: 920px; /* Set page width here - you can also use percentage */
 	text-align:left;  
 	margin-left:auto; 
 	margin-right:auto; 
 	margin-top: .75em;
 	margin-bottom: 1.5em;
-	padding: 10px;
+	padding: 10px 30px 10px 30px;
 	background: #efedee;
 	-moz-border-radius: 10px; 
 	-webkit-border- radius: 10px;
@@ -76,7 +76,7 @@ h1 {
 h2 {
 	float: left;
 	clear: both;
-	width: 950px;
+	width: 910px;
 	font-size: 1.5em; /* 18 pt */
 	line-height: 1em; /* 18 * line-height = 18pt */
 	margin-bottom: 1em; /* 18 * margin-bottom = 18pt */
@@ -117,7 +117,6 @@ ul, ol, dl
 li, dd, dt
 	{
 	font-size: 1em; /* Equivalent to 12pt */
-	margin-left: 15px;	
 }
 a
 	{
@@ -134,7 +133,7 @@ a:hover
 code
 	{
 	font-size: 1.2em;
-	width: 931px;
+	width: 891px;
 	float: left;
 	clear: left;
 	padding: 10px;
