@@ -14,7 +14,7 @@ website:   http://shapeshed.com
 	
 */
 * html,* html body{
-    background: transparent url(image.jpg) fixed;
+    background: url(image.jpg) fixed;
  }
 
 /* 
