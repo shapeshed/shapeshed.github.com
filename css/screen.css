@@ -241,6 +241,7 @@ header nav ul li a:hover
 -----------------------------------------------------------------------------*/
 footer
 	{
+	margin-top: 1.5em;
 	 background: transparent url(/images/backgrounds/footer_top.png) top left no-repeat;	
 }
 footer p
