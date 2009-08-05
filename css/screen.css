@@ -43,7 +43,7 @@ hgroup, menu, nav, section {
 body
   {
   font: 75%/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-  background: #ccc url(/images/backgrounds/background.jpg) repeat-x;
+  background: #999999 url(/images/backgrounds/background.jpg) repeat-x;
   color: #000;  
   text-align:center;
 }
@@ -206,6 +206,37 @@ header nav ul li a:hover
 	text-shadow: 0 -1px 1px rgba(0,0,0,1);
 	margin-top: 1.5em;
 }
+
+/* EE docs page
+-----------------------------------------------------------------------------*/
+#tabs
+	{
+	margin-top: 5px;
+	list-style:none;	
+}
+#tabs li
+	{
+	display:inline;	
+	background: #528fae; 
+	display: inline-block; 
+	padding: 5px 15px 6px; 
+	margin-top: 10px;
+	color: #fff; 
+	text-decoration: none;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+}
+#tabs li a
+	{
+	color: #fff;	
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 footer
@@ -423,58 +454,58 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-table#lighthouse
+#tickets table
 	{
 	width: 100%;
 }
 
-table#lighthouse tr
+#tickets table tr
 	{
 	background-color: #fff;	
 }
 
-table#lighthouse a
+#tickets table a
 	{
 	color: #666;
 	display: block;
 	border-bottom: 0;	
 }
-table#lighthouse tr td, table#lighthouse tr th
+#tickets table tr td, #tickets table tr th
 	{
 	padding: 5px;
 }
-table#lighthouse tr td
+#tickets table tr td
 	{
 	border-bottom: 1px dotted #ccc;	
 }
-table#lighthouse tr th:first-of-type 
+#tickets table tr th:first-of-type 
 	{
 	-moz-border-radius-topleft: 5px;
 	-webkit-border-top-left-radius: 5px;
 }
-table#lighthouse tr th:last-of-type
+#tickets table tr th:last-of-type
 	{
 	-moz-border-radius-topright: 5px;
 	-webkit-border-top-right-radius: 5px;	
 }
 
-table#lighthouse tr td.new a
+#tickets table tr td.new a
 	{
 	color: rgb(255, 17, 119);
 }
-table#lighthouse tr td.open a
+#tickets table tr td.open a
 	{
 	color: rgb(170, 170, 170);
 }
-table#lighthouse tr td.hold a
+#tickets table tr td.hold a
 	{
 	color: rgb(238, 187, 0);
 }
-table#lighthouse tr td.hold a
+#tickets table tr td.hold a
 	{
 	color: rgb(170, 51, 0);
 }
-table#lighthouse tr td.resolved a
+#tickets table tr td.resolved a
 	{
 	color: rgb(102, 170, 0);
 }

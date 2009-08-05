@@ -1,27 +1,32 @@
 ---
 layout: default
 ---
-	<div id="post">
+	<ul id="tabs">
+		<li><a href="#" id="documentation-tab">Documentation</a></li>
+		<li><a href="#" id="tickets-tab">Tickets</a></li>
+		<li><a href="#" id="comments-tab">Comments</a></li>
+		<li><a href="#" id="donations-tab">Donations</a></li>
+	</ul>
+	<div id="documentation">
 	{{ content }}
 	</div>
-
-	<table id="lighthouse">
-		<tr>
-			<th>#</th>
-			<th>Ticket</th>
-			<th>Milestone</th>
-			<th>Created at</th>
-			<th>Updated at</th>
-			<th>Status</th>
-		</tr>
-	</table>
-
-	<div id="related">
-	  <h2>Related Posts</h2>
-	  <ul class="posts">
-	    {% for post in site.related_posts limit:3 %}
-	      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	    {% endfor %}
-	  </ul>
-
+	<div id="tickets">
+		<p>You can open a ticket <a href="http://shapeshed.lighthouseapp.com/projects/{{ page.lighthouse }}/tickets/new">over at Lighthouse</a>. As this is free software the response time can vary.<p>
+		<table id="lighthouse" class="{{ page.lighthouse }}">
+			<tr>
+				<th>#</th>
+				<th>Ticket</th>
+				<th>Milestone</th>
+				<th>Created at</th>
+				<th>Updated at</th>
+				<th>Status</th>
+			</tr>
+		</table>
+	</div>
+	<div id="comments">
+		<h3>Comments</h3>
+		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ssgithub/embed.js"></script><noscript><a href="http://ssgithub.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>		
+	</div>
+	<div id="donations">
+		<h3>Donations</h3>
 	</div>

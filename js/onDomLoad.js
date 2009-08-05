@@ -5,21 +5,29 @@ $(document).ready(function(){
 	/*
 	 * Fetch Lighthouse JSON and write to DOM
 	 */	
-	$.getJSON("http://shapeshed.lighthouseapp.com/projects/30598-twit-ee/tickets.json?_token=" + lighthouseToken + "&callback=?", 
-	function(json)
-		{
-			$(json.tickets).each(function(ticket)
-			{	
-				html = '<tr><td><a href="' + this.ticket.url + '">' + this.ticket.number + '</a></td>';
-				html += '<td><a href="' + this.ticket.url + '">' + this.ticket.title + '</a></td>';
-				html += '<td><a href="' + this.ticket.url + '">' + this.ticket.milestone_title + '</a></td>';
-				html += '<td><a href="' + this.ticket.url + '">' + jQuery.timeago(this.ticket.created_at) + '</a></td>';
-				html += '<td><a href="' + this.ticket.url + '">' + jQuery.timeago(this.ticket.updated_at) + '</a></td>';				
-				html += '<td class="' + this.ticket.state + '"><a href="' + this.ticket.url + '">' + this.ticket.state + '</a></td></tr>';
-				$('#lighthouse').append(html)
-			});
+	
 
-		});	
+	
+	$('#tickets').ready(function(){
+		project = $('#tickets table').attr("class");
+		$.getJSON("http://shapeshed.lighthouseapp.com/projects/" + project + "/tickets.json?_token=" + lighthouseToken + "&callback=?", 
+		function(json)
+			{
+				$(json.tickets).each(function(ticket)
+				{	
+					html = '<tr><td><a href="' + this.ticket.url + '">' + this.ticket.number + '</a></td>';
+					html += '<td><a href="' + this.ticket.url + '">' + this.ticket.title + '</a></td>';
+					html += '<td><a href="' + this.ticket.url + '">' + this.ticket.milestone_title + '</a></td>';
+					html += '<td><a href="' + this.ticket.url + '">' + jQuery.timeago(this.ticket.created_at) + '</a></td>';
+					html += '<td><a href="' + this.ticket.url + '">' + jQuery.timeago(this.ticket.updated_at) + '</a></td>';				
+					html += '<td class="' + this.ticket.state + '"><a href="' + this.ticket.url + '">' + this.ticket.state + '</a></td></tr>';
+					$('#tickets table').append(html)
+				});
+
+			});
+	});
+	
+
 	
 	/*
 	 * Fetch Twitter JSON and write to DOM
@@ -84,4 +92,53 @@ $(document).ready(function(){
 			});
 			$('#lastfm').append(html);
 		});
+		
+	$('#tabs').ready(function(){	
+		$('#tickets').hide();
+		$('#comments').hide();
+		$('#donations').hide();
+		
+		$('#documentation-tab').click(function () 
+		{ 
+			$('#tickets').fadeOut("fast");
+			$('#comments').fadeOut("fast"); 
+			$('#donations').fadeOut("fast"); 			
+			$('#documentation').fadeIn("slow");		
+			return false
+		});
+		
+		$('#tickets-tab').click(function () 
+		{ 
+			$('#documentation').fadeOut("fast");
+			$('#comments').fadeOut("fast"); 
+			$('#donations').fadeOut("fast");
+			$('#tickets').fadeIn("slow"); 			
+			return false
+		});
+		
+		$('#comments-tab').click(function () 
+		{ 
+			$('#tickets').fadeOut("fast");
+			$('#documentation').fadeOut("fast"); 
+			$('#donations').fadeOut("fast");
+			$('#comments').fadeIn("slow"); 			
+			return false
+		});		
+		
+		$('#donations-tab').click(function () 
+		{ 
+			$('#tickets').fadeOut("fast");
+			$('#comments').fadeOut("fast"); 
+			$('#documentation').fadeOut("fast");
+			$('#donations').fadeIn("slow");			
+			return false
+		});		
+		
+		
+		
+		
+		
+		
+	});	
+
 });
