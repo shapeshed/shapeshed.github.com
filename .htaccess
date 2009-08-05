@@ -1,4 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-
-RewriteRule ^test /ie6-notice/ [R=301,L]
