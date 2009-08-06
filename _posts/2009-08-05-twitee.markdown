@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Twit-ee - Twitter for ExpressionEngine.
+summary: Show data from Twitter API in templates
 categories: expressionengine modules
 lighthouse: 30598-twit-ee
 ---
-
-# Twit-ee - Show data from Twitter API in ExpressionEngine templates
 
 * **Author(s)**: [George Ornbo][]
 * **Source Code**: [Github][]

@@ -5,21 +5,27 @@ title: ExpressionEngine
 
 <h1>ExpressionEngine</h1>
 <p><a href="http://expressionengine.com/">ExpressionEngine</a> is a tasty Content Management System and blogging tool from <a href="http://ellislab.com/">EllisLab</a>. I've written a few bits and pieces that plugin to it.</p>
-<h2><a href="/expressionengine/modules/">Modules</a></h2>
-<ul>
-    {% for post in site.categories.modules %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
-<h2><a href="/expressionengine/extensions/">Extensions</a></h2>
-<ul>
-    {% for post in site.categories.extensions %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
-<h2><a href="/expressionengine/plugins/">Plugins</a></h2>
-<ul>
-    {% for post in site.categories.plugins %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<section id="ee-modules">
+	<h2><a href="/expressionengine/modules/">Modules</a></h2>
+	<ul>
+	    {% for post in site.categories.modules %}
+	      <li><a href="{{ post.url }}">{{ post.title }}<br /></a>{{ post.summary }}</li>
+	    {% endfor %}
+	</ul>
+</section>
+<section id="ee-extensions">
+	<h2><a href="/expressionengine/extensions/">Extensions</a></h2>
+	<ul>
+	    {% for post in site.categories.extensions %}
+	      <li><a href="{{ post.url }}">{{ post.title }}</a><br />{{ post.summary }}</li>
+	    {% endfor %}
+	</ul>
+</section>
+<section id="ee-plugins">
+	<h2><a href="/expressionengine/plugins/">Plugins</a></h2>
+	<ul>
+	    {% for post in site.categories.plugins %}
+	      <li><a href="{{ post.url }}">{{ post.title }}</a><br />{{ post.summary }}</li>
+	    {% endfor %}
+	</ul>
+</section>

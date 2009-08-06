@@ -1,32 +1,37 @@
 ---
 layout: default
 ---
-	<ul id="tabs">
-		<li><a href="#" id="documentation-tab">Documentation</a></li>
-		<li><a href="#" id="tickets-tab">Tickets</a></li>
-		<li><a href="#" id="comments-tab">Comments</a></li>
-		<li><a href="#" id="donations-tab">Donations</a></li>
-	</ul>
-	<div id="documentation">
-	{{ content }}
-	</div>
-	<div id="tickets">
-		<p>You can open a ticket <a href="http://shapeshed.lighthouseapp.com/projects/{{ page.lighthouse }}/tickets/new">over at Lighthouse</a>. As this is free software the response time can vary.<p>
-		<table id="lighthouse" class="{{ page.lighthouse }}">
-			<tr>
-				<th>#</th>
-				<th>Ticket</th>
-				<th>Milestone</th>
-				<th>Created at</th>
-				<th>Updated at</th>
-				<th>Status</th>
-			</tr>
-		</table>
-	</div>
-	<div id="comments">
-		<h3>Comments</h3>
-		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ssgithub/embed.js"></script><noscript><a href="http://ssgithub.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>		
-	</div>
-	<div id="donations">
-		<h3>Donations</h3>
-	</div>
+	<article>
+		<h1>{{ page.title }}</h1>
+		<nav>
+			<ul id="tabs">
+				<li><a href="#documentation" id="documentation-tab">Documentation</a></li>
+				<li><a href="#tickets" id="tickets-tab">Tickets</a></li>
+				<li><a href="#comments" id="comments-tab">Comments</a></li>
+				<li><a href="#donations" id="donations-tab">Donations</a></li>
+			</ul>
+		</nav>
+		<section id="documentation">
+		{{ content }}
+		</section>
+		<section id="tickets">
+			<p>You can open a ticket <a href="http://shapeshed.lighthouseapp.com/projects/{{ page.lighthouse }}/tickets/new">over at Lighthouse</a>. As this is free software the response time can vary.<p>
+			<table id="lighthouse" class="{{ page.lighthouse }}">
+				<tr>
+					<th>#</th>
+					<th>Ticket</th>
+					<th>Milestone</th>
+					<th>Created at</th>
+					<th>Updated at</th>
+					<th>Status</th>
+				</tr>
+			</table>
+		</section>
+		<section id="comments">
+			<h3>Comments</h3>
+			<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ssgithub/embed.js"></script><noscript><a href="http://ssgithub.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>		
+		</section>
+		<section id="donations">
+			<h3>Donations</h3>
+		</section>
+	</article>

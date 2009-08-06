@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Human Filesize
+summary: Shows the size of a file in human readable format
 categories: expressionengine extensions
 lighthouse: 30635-human_filesizeee_addon
 ---
-
-# Human Filesize - Shows the size of a file in human readable format
 
 **Author**: [George Ornbo][]
 **Source Code**: [Github][]
