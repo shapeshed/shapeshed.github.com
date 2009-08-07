@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>{{ page.title }}</title>
+	<title>{% if page.title %}{{ page.title }}{% endif %}</title>
+	<!-- Meta -->
+	{% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}" />{% endif %}
+	{% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}" />{% endif %}
+	<!-- CSS -->
 	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+	<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script src="/js/jquery.timeago.js"></script>
 	<script src="/js/onDomLoad.js"></script>
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="Shape Shed on Github" href="http://feeds.shapeshed.com/shapeshed" />
 </head>
 <body>
 	<header>

@@ -1,5 +1,7 @@
 ---
 layout: post
+meta_keywords: expressionengine, module, twitter, api
+meta_description: Show data from Twitter API in ExpressionEngine templates
 title: Twit-ee - Twitter for ExpressionEngine.
 summary: Show data from Twitter API in templates
 categories: expressionengine modules

@@ -1,5 +1,7 @@
 ---
 layout: post
+meta_keywords: expressionengine, plugin, friendly, 404, error
+meta_description: Returns suggestions of weblog entries on a 404 page
 title: Friendly 404
 summary: Returns suggestions of weblog entries on a 404 page
 categories: expressionengine plugins
