@@ -25,7 +25,13 @@ $(document).ready(function(){
 	});
 	
 	$('#twitter').ready(function(){
-		$('#twitter').append('<img src="/content/twitter_loader.gif" alt="Loader image" />');		
+		$('#twitter').append('<img src="/images/content/twitter_loader.gif" alt="Loader image" />');		
+	});
+	$('#lastfm').ready(function(){
+		$('#lastfm').append('<img src="/images/content/lastfm_loader.gif" alt="Loader image" />');		
+	});
+	$('#flickr').ready(function(){
+		$('#flickr').append('<img src="/images/content/flickr_loader.gif" alt="Loader image" class="loader" />');		
 	});
 	
 
@@ -36,6 +42,7 @@ $(document).ready(function(){
 	$.getJSON("http://twitter.com/statuses/user_timeline/shapeshed.json?count=1&callback=?", 
 	function(json)
 		{
+			$('#twitter img').remove();
 			var html = "<ul>";
 			$(json).each(function(tweet)
 			{	
@@ -54,6 +61,7 @@ $(document).ready(function(){
 		$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=88593837@N00&format=json&jsoncallback=?", 
 		function(json)
 			{
+				$('#flickr img.loader').remove();
 				var html = "<ul>";
 				$(json.items).each(function(i,photo)			
 				{
@@ -78,6 +86,7 @@ $(document).ready(function(){
 		$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=dodinator&format=json&limit=1&api_key=b25b959554ed76058ac220b7b2e0a026&callback=?", 
 		function(json)
 			{
+				$('#lastfm img').remove();
 				html = "";
 				$(json.recenttracks).each(function(track)
 				{	
