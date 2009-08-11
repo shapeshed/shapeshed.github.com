@@ -42,7 +42,7 @@ hgroup, menu, nav, section {
 -----------------------------------------------------------------------------*/
 body
   {
-  font: 75%/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  font: 81.25%/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
   background: #999999 url(/images/backgrounds/background.jpg) repeat-x;
   color: #000;  
   text-align:center;
@@ -67,9 +67,15 @@ body
 -----------------------------------------------------------------------------*/
 h1
   {
-  font-size: 2em;
-  line-height: 0.75em;
-  margin-bottom: 0.75em; /* margin-bottom = 18pt */
+	margin-top: 2.25em;
+	font-size: 2em;
+	line-height: 0.75em;
+	margin-bottom: 0.75em; /* margin-bottom = 18pt */
+	text-shadow: 0 -1px 1px rgba(0,0,0,1);	
+}
+h1.article
+	{
+	margin-left:10px;	
 }
 h2 {
   font-size: 1.6666666666666667em; /* 20 pt */
@@ -208,31 +214,70 @@ header nav ul li a:hover
 }
 /* EE Section page
 -----------------------------------------------------------------------------*/
-
-#ee-plugins h3, #ee-extensions h3, #ee-modules h3
+#ee-plugins h2, #ee-extensions h2, #ee-modules h2
 	{
 	margin-bottom: 0;
 }
 
+#ee-plugins h2 a, #ee-extensions h2 a, #ee-modules h2 a
+	{
+	margin-bottom: 0;
+	color: white;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	background: rgb(51,51,51);
+	padding: 10px;
+	display: block;
+	text-shadow:0 -1px 1px #000000;
+}
+#ee-modules ul, #ee-extensions ul , #ee-plugins ul
+	{
+	width: 300px;
+	list-style: none;
+	float: left;
+}
+#ee-modules ul li:nth-child(2n+1), #ee-extensions ul li:nth-child(2n+1), #ee-plugins ul li:nth-child(2n+1)
+	{
+	padding: 5px;
+	background: rgb(102,102,102);
+}
+#ee-modules ul li, #ee-extensions ul li, #ee-plugins ul li
+	{
+	padding: 5px;
+	background: rgb(153,153,153);
+}
+
+#ee-modules
+	{
+	width: 300px;
+	clear: left;
+	float: left;
+
+}
+#ee-extensions
+	{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+
+}
+#ee-plugins
+	{
+	width: 300px;
+	float: right;
+
+}
 
 
 
-/* Article page
+/* EE docs page
 -----------------------------------------------------------------------------*/
-article
-	{
-	margin-top: 4.5em;
-}
-article h1
-	{
-	margin-bottom: 0;
-	text-shadow: 0 -1px 1px rgba(0,0,0,1);	
-}
-
 #tabs
 	{
-	margin-top: 5px;
-	list-style:none;	
+	list-style:none;
+	margin-left:  10px;	
 }
 #tabs li
 	{
@@ -240,7 +285,7 @@ article h1
 	background: #528fae; 
 	display: inline-block; 
 	padding: 5px 15px 6px; 
-	margin-top: 10px;
+	margin-top: 0px;
 	color: #fff; 
 	text-decoration: none;
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -257,10 +302,57 @@ article h1
 	color: #fff;	
 }
 
+#paypal input[type=submit]
+	{
+		display:inline;	
+		background: rgba(255, 0, 102, 0.8);
+		display: inline-block; 
+		padding: 5px 15px 6px; 
+		margin-top: 10px;
+		color: #fff; 
+		text-decoration: none;
+		-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+		text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid rgba(0,0,0,0.25);
+		position: relative;
+		cursor: pointer;
+		-moz-border-radius: 15px; 
+		-webkit-border-radius: 15px;		
+}
+
+aside
+	{
+	float: right;
+	background: white;
+	width: 300px;
+	padding: 20px;
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;	
+}
+
+pre
+ 	{
+	padding: 5px;
+	background: #202020;
+	font-size: 1.2em;	
+	margin-bottom: 1.5em;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+}
+#documentation, #tickets, #comments, #donations
+	{
+	margin: 0 10px;
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 footer
 	{
+	clear: both;
 	margin-top: 1.5em;
 	 background: transparent url(/images/backgrounds/footer_top.png) top left no-repeat;	
 }
@@ -396,7 +488,7 @@ footer section
 
 /* Code Syntax Highlighting
 -----------------------------------------------------------------------------*/
-.highlight {background-color: #202020;}
+.highlight {background-color: #202020; width: 920px;overflow-x: auto;margin-bottom:1.5em;}
 .highlight .hll { background-color: #404040 }
 .highlight .c { color: #999999; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -480,7 +572,7 @@ table {
 	width: 100%;
 }
 
-#tickets table tr
+#tickets table tr td
 	{
 	background-color: #fff;	
 }
@@ -531,8 +623,7 @@ table {
 	color: rgb(102, 170, 0);
 }
 th {
-	background: #ccc;
+	background: rgb(51,51,51);
 }
-
 
  

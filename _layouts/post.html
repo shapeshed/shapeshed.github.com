@@ -2,15 +2,34 @@
 layout: default
 ---
 	<article>
-		<h1>{{ page.title }}</h1>
+		<h1 class="article">{{ page.title }}</h1>
 		<nav>
 			<ul id="tabs">
+				<li><a href="#downloads" id="downloads-tab">Download</a></li>
 				<li><a href="#documentation" id="documentation-tab">Documentation</a></li>
 				<li><a href="#tickets" id="tickets-tab">Tickets</a></li>
 				<li><a href="#comments" id="comments-tab">Comments</a></li>
 				<li><a href="#donations" id="donations-tab">Donations</a></li>
 			</ul>
 		</nav>
+		<section id="downloads">
+			<p class="summary">{{ page.summary }}</p>
+			{% if page.github_tags %}
+			<aside>
+				<ul>
+					<li><a href="#current">Current</a></li>
+					<li><a href="#older">Older versions</a></li>
+				</ul>
+				<p><a href="http://github.com/shapeshed/{{ page.github }}/zipball/{{ page.github_tags.first }}">Download the latest version ({{ page.github_tags.first }})</a></p>
+				<p>All downloads</p>
+				<ul>
+			{% for tag in page.github_tags %}
+			{% if tag != page.github_tags.first %}<li><a href="http://github.com/shapeshed/{{ page.github }}/zipball/{{ tag }}">{{ tag }}</a></li>{% endif %}	
+			{% endfor %}
+				</ul>
+			</aside>
+			{% endif %}
+		</section>
 		<section id="documentation">
 		{{ content }}
 		</section>
@@ -33,5 +52,13 @@ layout: default
 		</section>
 		<section id="donations">
 			<h3>Donations</h3>
+			<p>Most of my software is free but I still need to eat and keep the wife happy.</p>
+			<p>If you use any software commercially please consider giving a donation.</p>
+			<form action="https://www.paypal.com/cgi-bin/webscr" id="paypal" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="7353353" />
+			<input type="submit" name="submit" value="Make a donation via PayPal" />
+			</form>
+
 		</section>
 	</article>

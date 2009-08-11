@@ -56,15 +56,15 @@ There are currently no parameters
 
 There are currently no single variables
 	
-# Examples
+## Examples
 
 	{exp:ss_human_filesize}/uploads/documents/your_document.pdf{/exp:ss_human_filesize}
 
-# See also
+## See also
 
 http://expressionengine.com/forums/viewthread/92466/
 	
-# License
+## License
 
 Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
 

@@ -1,0 +1,63 @@
+---
+layout: post
+summary: IE6 Notice is a 2kb JavaScript file that adds a notice for site visitors using Internet Explorer 6
+meta_keywords: xhtml, css, javascript, ie6, notice
+meta_description: {{ page.description }}
+title: IE6 Notice
+categories: javascript
+lighthouse: 30598-twit-ee
+github: ie6-notice
+github_tags: [1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
+
+---
+
+* **Author(s)**: [George Ornbo][]
+* **Source Code**: [Github][]
+
+## Compatibility
+
+* XHTML 1.1
+* CSS 2.1
+
+## License
+
+IE6 Notice is free for personal and commercial use. 
+
+XHTML / CSS Framework is licensed under a [Open Source Initiative - BSD License][] license. I encourage others to fork the code and enhance it. 
+
+## Installation
+
+To add IE6 Notice to your site just add this code before the closing body tag of your HTML.
+
+{% highlight html %}
+<!--[if IE 6]>
+<script type="text/javascript" src="http://shapeshed.github.com/ie6-notice/ie6notice-1.0.0.min.js"></script>
+<![endif]-->
+{% endhighlight %}
+
+## Name
+
+{{ page.title }}
+
+## Synopsis
+
+{{ page.summary }}
+
+## Description
+
+Internet Explorer 6 was released on August 27, 2001. Almost eight years later the web has moved on but Internet Explorer is still widely used, especially in corporate environments. It is time that users were encouraged to upgrade from Internet Explorer.
+
+Don't like the style? You can override the styles of the notice with your own custom CSS. The following elements can be styled:
+
+* \#ie6-notice - the div containing the notice
+* \#ie6-notice p#ie6-text - the paragraph containing the notice text
+* \#ie6-notice p#ie6-hide-notice a - the hide this notice link
+
+
+## See also ##
+
+* [Github][]
+	
+[George Ornbo]: http://shapeshed.com/
+[Open Source Initiative - BSD License]: http://opensource.org/licenses/bsd-license.php
+[Github]: http://github.com/shapeshed/{{ page.github }}/

@@ -6,6 +6,9 @@ title: Twit-ee - Twitter for ExpressionEngine.
 summary: Show data from Twitter API in templates
 categories: expressionengine modules
 lighthouse: 30598-twit-ee
+github: twit-ee.ee_addon
+github_tags: [1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
+
 ---
 
 * **Author(s)**: [George Ornbo][]
@@ -37,11 +40,11 @@ Twit-ee is licensed under a [Open Source Initiative - BSD License][] license. I 
 
 ## Name
 
-Twit-ee
+{{ page.title }}
 
 ## Synopsis
 
-Show data from Twitter API in ExpressionEngine templates
+{{ page.summary }}
 
 ## Description
 
@@ -211,4 +214,4 @@ Show the latest 10 tweets from your favorites with a cache time of 30 minutes
 [George Ornbo]: http://shapeshed.com/
 [ExpressionEngine]:http://www.expressionengine.com/index.php?affiliate=shapeshed
 [Open Source Initiative - BSD License]: http://opensource.org/licenses/bsd-license.php
-[Github]: http://github.com/shapeshed/ss.twitee.ee_addon/
+[Github]: http://github.com/shapeshed/twitee.ee_addon/
