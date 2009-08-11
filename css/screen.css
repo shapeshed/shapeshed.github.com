@@ -485,6 +485,12 @@ footer section
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
+#flickr img.loader
+	{
+	float: left;
+	text-align: left;
+	border: 0;	
+}
 
 /* Code Syntax Highlighting
 -----------------------------------------------------------------------------*/
