@@ -5,9 +5,9 @@ meta_description: A boilerplate for creating layouts in XHTML 1.1
 title: XHTML / CSS Framework
 summary: A boilerplate for creating layouts in XHTML 1.1
 categories: html-css
-lighthouse: 30598-twit-ee
+lighthouse: 35276-xhtml-css-framework
 github: css_xhtml.framework
-github_tags: [1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
+github_tags: [1.0]
 
 ---
 

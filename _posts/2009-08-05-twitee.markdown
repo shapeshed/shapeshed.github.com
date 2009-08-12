@@ -7,11 +7,11 @@ summary: Show data from Twitter API in templates
 categories: expressionengine modules
 lighthouse: 30598-twit-ee
 github: twit-ee.ee_addon
-github_tags: [1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
+github_tags: [1.2, 1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
 
 ---
 
-* **Author(s)**: [George Ornbo][]
+* **Author(s)**: [George Ornbo][], [Leevi Graham][]
 * **Source Code**: [Github][]
 
 ## Compatibility
@@ -20,7 +20,7 @@ github_tags: [1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
 * PHP 5.x.x
 * cURL support
 
-## License
+## License ##
 
 Twit-ee is free for personal and commercial use. 
 
@@ -40,11 +40,11 @@ Twit-ee is licensed under a [Open Source Initiative - BSD License][] license. I 
 
 ## Name
 
-{{ page.title }}
+Twit-ee
 
 ## Synopsis
 
-{{ page.summary }}
+Show data from Twitter API in ExpressionEngine templates
 
 ## Description
 
@@ -127,6 +127,30 @@ The number of minutes between cache refreshes. Default - 5 minutes.
 	
 Allows you to show data from another MSM enabled site. Default - the current site id.
 
+### Convert URLs into links ###
+
+	convert_urls="n"
+	
+Convert urls in the tweet into anchors. Default - "y"
+
+### Convert @usernames into links ###
+
+	convert_usernames="n"
+	
+Convert @username in the tweet into anchors that point to the users profile. Default - "y"
+
+### Convert #hastags into links ###
+
+	convert_hash_tags="n"
+	
+Convert #hashtags in the tweet into anchors that point to search.twitter.com. Default - "y"
+
+### Capitalise the first letter of the relative time ###
+
+	ucfirst_relative_time="y"
+	
+Changes the first letter of the relative time to uppercase. Default - "n"
+
 ## Single Variables ##
 
 ### For Status methods ###
@@ -135,6 +159,7 @@ Public Timeline, Friends Timeline, User Timeline, Replies and Favorites
 	
 	Status
 		{created_at}
+		{relative_time}
 		{id}
 		{text}
 		{source}
@@ -210,8 +235,9 @@ Show the latest 10 tweets from your favorites with a cache time of 30 minutes
 
 * [Twitter REST API Documentation](http://apiwiki.twitter.com/REST+API+Documentation)
 * [Github][]
-
+	
 [George Ornbo]: http://shapeshed.com/
+[Leevi Graham]: http://leevigraham.com/
 [ExpressionEngine]:http://www.expressionengine.com/index.php?affiliate=shapeshed
 [Open Source Initiative - BSD License]: http://opensource.org/licenses/bsd-license.php
 [Github]: http://github.com/shapeshed/twitee.ee_addon/

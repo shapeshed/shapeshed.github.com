@@ -7,7 +7,7 @@ title: IE6 Notice
 categories: javascript
 lighthouse: 34369-ie6-notice
 github: ie6-notice
-github_tags: [1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
+github_tags: [1.0]
 
 ---
 
