@@ -368,6 +368,7 @@ pre
 	{
 	clear: both;
 	float: left;
+	margin-top: 1.5em;
 	background: transparent url(/images/backgrounds/footer_top.png) top left no-repeat;	
 }
 
@@ -432,7 +433,9 @@ pre
 
 #lastfm img
 	{
-	float: left;	
+	float: left;
+	width: 126px;
+	height: 126px;	
 }
 #lastfm p
 	{
