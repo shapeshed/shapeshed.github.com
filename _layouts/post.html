@@ -5,15 +5,13 @@ layout: default
 		<h1 class="article">{{ page.title }}</h1>
 		<nav>
 			<ul id="tabs">
-				<li><a href="#downloads" id="downloads-tab">Download</a></li>
 				<li><a href="#documentation" id="documentation-tab">Documentation</a></li>
 				<li><a href="#tickets" id="tickets-tab">Tickets</a></li>
 				<li><a href="#comments" id="comments-tab">Comments</a></li>
 				<li><a href="#donations" id="donations-tab">Donations</a></li>
 			</ul>
 		</nav>
-		<section id="downloads">
-			<p class="summary">{{ page.summary }}</p>
+		<section id="documentation">
 			{% if page.github_tags %}
 			<aside>
 				<ul>
@@ -28,9 +26,7 @@ layout: default
 			{% endfor %}
 				</ul>
 			</aside>
-			{% endif %}
-		</section>
-		<section id="documentation">
+			{% endif %}			
 		{{ content }}
 		</section>
 		<section id="tickets">

@@ -6,6 +6,7 @@ title: Friendly 404
 summary: Returns suggestions of weblog entries on a 404 page
 categories: expressionengine plugins
 lighthouse: 30634-friendly_404ee_addon
+github: friendly_404.ee_addon
 ---
 
 **Author**: [George Ornbo][]

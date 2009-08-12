@@ -113,24 +113,12 @@ $(document).ready(function(){
 		}
 		
 	$('#tabs').ready(function(){	
-		$('#documentation').hide();
 		$('#tickets').hide();
 		$('#comments').hide();
 		$('#donations').hide();
-				
-		$('#downloads-tab').click(function () 
-		{ 
-			$('#documentation').fadeOut("fast");
-			$('#tickets').fadeOut("fast");
-			$('#comments').fadeOut("fast"); 
-			$('#donations').fadeOut("fast"); 			
-			$('#downloads').fadeIn("slow");		
-			return false
-		});
 
 		$('#documentation-tab').click(function () 
 		{ 
-			$('#downloads').fadeOut("fast");
 			$('#tickets').fadeOut("fast");
 			$('#comments').fadeOut("fast"); 
 			$('#donations').fadeOut("fast"); 			
@@ -140,7 +128,6 @@ $(document).ready(function(){
 		
 		$('#tickets-tab').click(function () 
 		{ 
-			$('#downloads').fadeOut("fast");
 			$('#documentation').fadeOut("fast");
 			$('#comments').fadeOut("fast"); 
 			$('#donations').fadeOut("fast");
@@ -150,7 +137,6 @@ $(document).ready(function(){
 		
 		$('#comments-tab').click(function () 
 		{ 
-			$('#downloads').fadeOut("fast");
 			$('#tickets').fadeOut("fast");
 			$('#documentation').fadeOut("fast"); 
 			$('#donations').fadeOut("fast");
@@ -160,7 +146,6 @@ $(document).ready(function(){
 		
 		$('#donations-tab').click(function () 
 		{ 
-			$('#downloads').fadeOut("fast");
 			$('#tickets').fadeOut("fast");
 			$('#comments').fadeOut("fast"); 
 			$('#documentation').fadeOut("fast");

@@ -81,12 +81,15 @@ h2 {
   font-size: 1.6666666666666667em; /* 20 pt */
   line-height: 0.9em; /* 20 * line-height = 18pt */
   margin-bottom: 0.9em; /* 20 * margin-bottom = 18pt */
+	text-shadow: 0 -1px 1px rgba(0,0,0,1);	
+
 }
 h3 {
   clear: left;
   font-size: 1.5em; /* 18 pt */
   line-height: 1em; /* 18 * line-height = 18pt */
   margin-bottom: 1em; /* 18 * margin-bottom = 18pt */
+	text-shadow: 0 -1px 1px rgba(0,0,0,1);
 }
 h4 {
   font-size: 1.3333333333333333em; /* 16 pt */
@@ -185,11 +188,13 @@ header nav ul li a
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	border-bottom: 1px solid rgba(0,0,0,0.25);
 	position: relative;
-	cursor: pointer;	
+	cursor: pointer;
+    -webkit-transition-property: background-color, border;
+ 	-webkit-transition-duration: 1s, 1s;
 }
 header nav ul li a:hover
 	{ 
-	background-color: #ffb515; 
+	background-color: #db0d5f; 
 	display: inline-block; 
 	padding: 5px 15px 6px; 
 	color: #fff; 
@@ -228,7 +233,7 @@ header nav ul li a:hover
 	-moz-border-radius-topright: 5px;
 	-webkit-border-top-right-radius: 5px;
 	background: rgb(51,51,51);
-	padding: 10px;
+	padding: 10px 10px 10px 5px;
 	display: block;
 	text-shadow:0 -1px 1px #000000;
 }
@@ -241,13 +246,19 @@ header nav ul li a:hover
 #ee-modules ul li:nth-child(2n+1), #ee-extensions ul li:nth-child(2n+1), #ee-plugins ul li:nth-child(2n+1)
 	{
 	padding: 5px;
-	background: rgb(102,102,102);
+	background: rgba(255,255,255,0.8);
 }
 #ee-modules ul li, #ee-extensions ul li, #ee-plugins ul li
 	{
 	padding: 5px;
-	background: rgb(153,153,153);
+	background: rgba(255,255,255,0.6);
+	color: #333;
 }
+#ee-modules ul li a, #ee-extensions ul li a, #ee-plugins ul li a
+	{
+	font-size: 1.25em;
+}
+
 
 #ee-modules
 	{
@@ -342,6 +353,9 @@ pre
 	margin-bottom: 1.5em;
 	-moz-border-radius: 3px; 
 	-webkit-border-radius: 3px;
+  	border: 1px solid #666;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
 }
 #documentation, #tickets, #comments, #donations
 	{
@@ -350,21 +364,17 @@ pre
 
 /* Footer
 -----------------------------------------------------------------------------*/
-footer
+#lifestream
 	{
 	clear: both;
-	margin-top: 1.5em;
-	 background: transparent url(/images/backgrounds/footer_top.png) top left no-repeat;	
+	float: left;
+	background: transparent url(/images/backgrounds/footer_top.png) top left no-repeat;	
 }
-footer p
+
+#twitter, #flickr, #lastfm
 	{
-	padding-top: .75em;
-	margin-bottom: 0;
-	clear: both;	
-}
-footer section
-	{
-	min-height: 138px;	
+	min-height: 132px;
+	margin-bottom: 1.5em;	
 }
 
 #twitter
@@ -492,6 +502,21 @@ footer section
 	border: 0;	
 }
 
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer
+	{
+	clear: both;
+	margin-top: 1.5em;
+	 background: transparent url(/images/backgrounds/footer_top.png) top left no-repeat;	
+}
+footer p
+	{
+	padding-top: .75em;
+	margin-bottom: 0;
+	clear: both;	
+}
 /* Code Syntax Highlighting
 -----------------------------------------------------------------------------*/
 .highlight {background-color: #202020; width: 920px;overflow-x: auto;margin-bottom:1.5em;}
