@@ -14,15 +14,13 @@ layout: default
 		<section id="documentation">
 			{% if page.github_tags %}
 			<aside>
-				<ul>
-					<li><a href="#current">Current</a></li>
-					<li><a href="#older">Older versions</a></li>
-				</ul>
+				<h4>Downloads</h4>
 				<p><a href="http://github.com/shapeshed/{{ page.github }}/zipball/{{ page.github_tags.first }}">Download the latest version ({{ page.github_tags.first }})</a></p>
-				<p>All downloads</p>
+				<p id="older"><a href="#" id="older-versions">Older versions</a></p>
 				<ul>
 			{% for tag in page.github_tags %}
-			{% if tag != page.github_tags.first %}<li><a href="http://github.com/shapeshed/{{ page.github }}/zipball/{{ tag }}">{{ tag }}</a></li>{% endif %}	
+			{% if tag != page.github_tags.first %}<li><a href="http://github.com/shapeshed/{{ page.github }}/zipball/{{ tag }}">{{ tag }}</a></li>
+			{% endif %}	
 			{% endfor %}
 				</ul>
 			</aside>

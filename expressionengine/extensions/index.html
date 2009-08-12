@@ -7,7 +7,7 @@ meta_description: ExpressionEngine extensions
 
 <h1>ExpressionEngine Extensions</h1>
 <ul class="posts">
-	{% for post in site.categories.modules %}
-	  <li><span>{{ post.date | date_to_string }}</span> - {{ post.title }}</li>
-	{% endfor %}
+    {% for post in site.categories.extensions %}
+      <li><a href="{{ post.url }}">{{ post.title }}<br /></a>{{ post.summary }}</li>
+    {% endfor %}
 </ul>
