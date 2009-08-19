@@ -44,15 +44,13 @@ layout: default
 			<h3>Comments</h3>
 			<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ssgithub/embed.js"></script><noscript><a href="http://ssgithub.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>		
 		</section>
+		{% if page.pledgie %}		
 		<section id="donations">
 			<h3>Donations</h3>
 			<p>Most of my software is free but I still need to eat and keep the wife happy.</p>
 			<p>If you use any software commercially please consider giving a donation.</p>
-			<form action="https://www.paypal.com/cgi-bin/webscr" id="paypal" method="post">
-			<input type="hidden" name="cmd" value="_s-xclick" />
-			<input type="hidden" name="hosted_button_id" value="7353353" />
-			<input type="submit" name="submit" value="Make a donation via PayPal" />
+			<p><a href="http://pledgie.com/campaigns/{{ page.pledgie }}">Make a donation via PayPal</a></p>
 			</form>
-
 		</section>
+		{% endif %}	
 	</article>

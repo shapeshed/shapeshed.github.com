@@ -8,6 +8,7 @@ categories: expressionengine modules
 lighthouse: 30598-twit-ee
 github: twit-ee.ee_addon
 github_tags: [1.2, 1.1, 1.0.2, 1.0.1, 1.0.0, beta-1]
+pledgie: 2898
 
 ---
 

@@ -8,6 +8,7 @@ categories: expressionengine plugins
 lighthouse: 35751-copyrightee_addon
 github: copyright.ee_addon
 github_tags: [1.0]
+pledgie: 5741
 
 ---
 
@@ -45,9 +46,7 @@ The plugin returns a string for displaying a copyright notices in ExpressionEngi
 
 	{exp:copyright:show}
 	
-Gives
-
-	&copy; 2009
+Gives &copy; 2009
 
 ## Parameters ##
 

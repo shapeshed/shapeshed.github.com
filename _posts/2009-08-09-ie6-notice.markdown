@@ -8,6 +8,7 @@ categories: javascript
 lighthouse: 34369-ie6-notice
 github: ie6-notice
 github_tags: [1.0]
+pledgie: 5746
 
 ---
 

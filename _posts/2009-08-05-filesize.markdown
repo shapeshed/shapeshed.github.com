@@ -8,6 +8,8 @@ categories: expressionengine extensions
 lighthouse: 30635-human_filesizeee_addon
 github: human_filesize.ee_addon
 github_tags: [1.1, 1.0]
+pledgie: 5745
+
 ---
 
 **Author**: [George Ornbo][]
