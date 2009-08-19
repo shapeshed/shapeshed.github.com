@@ -5,7 +5,7 @@ meta_description: {{ page.summary }}
 title: Copyright
 summary: Shows a copyright notice in ExpressionEngine Templates
 categories: expressionengine plugins
-lighthouse: 30598-twit-ee
+lighthouse: 35751-copyrightee_addon
 github: copyright.ee_addon
 github_tags: [1.0]
 
@@ -98,6 +98,6 @@ Changes the copyright symbol to anything you set. e.g. anything 2009
 Changes the delimiter to anything you set. e.g. 2005 to 2009
 	
 [George Ornbo]: http://shapeshed.com/
-[Github]: http://github.com/shapeshed/copyright.ee_addon/
 [ExpressionEngine]:http://www.expressionengine.com/index.php?affiliate=shapeshed
 [Open Source Initiative - BSD License]: http://opensource.org/licenses/bsd-license.php
+[Github]: http://github.com/shapeshed/copyright.ee_addon/
