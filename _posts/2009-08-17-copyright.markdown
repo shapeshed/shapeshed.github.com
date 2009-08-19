@@ -42,7 +42,7 @@ This file pi.copyright.php must be placed in the /system/plugins/ folder in your
 
 ## Description
 
-The plugin returns a string for displaying a copyright notices in ExpressionEngine templates
+The plugin returns a string for displaying a copyright notice in ExpressionEngine templates
 
 	{exp:copyright:show}
 	
