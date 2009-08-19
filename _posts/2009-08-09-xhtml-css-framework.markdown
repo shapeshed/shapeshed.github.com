@@ -24,7 +24,7 @@ pledgie: 5742
 
 XHTML / CSS Framework is free for personal and commercial use. 
 
-If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/2898). 
+If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/5742). 
 
 XHTML / CSS Framework is licensed under a [Open Source Initiative - BSD License][] license. I encourage others to fork the code and enhance it. 
 
