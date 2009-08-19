@@ -23,7 +23,7 @@ pledgie: 5745
 
 Human Filesize is free for personal and commercial use. 
 
-If you use it commercially use a donation of $5 is suggested. You can send [donations here](http://pledgie.org/campaigns/2898). 
+If you use it commercially use a donation of $5 is suggested. You can send [donations here](http://pledgie.org/campaigns/5745). 
 
 Human Filesize is licensed under a [Open Source Initiative - BSD License][] license.
 

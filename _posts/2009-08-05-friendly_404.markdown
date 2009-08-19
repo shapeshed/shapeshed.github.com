@@ -8,7 +8,7 @@ categories: expressionengine plugins
 lighthouse: 30634-friendly_404ee_addon
 github: friendly_404.ee_addon
 github_tags: [1.0]
-pledgie: 2898
+pledgie: 5743
 
 ---
 
@@ -24,7 +24,7 @@ pledgie: 2898
 
 Friendly 404 is free for personal and commercial use. 
 
-If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/2898). 
+If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/5743). 
 
 Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
 

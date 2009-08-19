@@ -1,7 +1,7 @@
 ---
 layout: post
 meta_keywords: expressionengine, copyright, plugin
-meta_description: {{ page.summary }}
+meta_description: Shows a copyright notice in ExpressionEngine Templates
 title: Copyright
 summary: Shows a copyright notice in ExpressionEngine Templates
 categories: expressionengine plugins
@@ -72,7 +72,7 @@ Sets the delimiter between two years. Default - the "&ndash;" symbol
 
 	copyright_symbol=""
 	
-Sets the copyright symbol. Default - the "&copy;"
+Sets the copyright symbol. Default - the "&copy;" symbol
 	
 ## Examples
 
