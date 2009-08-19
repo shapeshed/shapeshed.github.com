@@ -8,6 +8,8 @@ categories: expressionengine plugins
 lighthouse: 30634-friendly_404ee_addon
 github: friendly_404.ee_addon
 github_tags: [1.0]
+pledgie: 2898
+
 ---
 
 **Author**: [George Ornbo][]
