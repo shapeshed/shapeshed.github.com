@@ -53,9 +53,8 @@ layout: nil
   </url>
   {% for post in site.posts %}
   <url>
-    <loc>http://al3x.net{{ post.url }}</loc>
+    <loc>http://shapeshed.github.com{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-   </url>
-   {% endfor %}
+   </url>{% endfor %}
