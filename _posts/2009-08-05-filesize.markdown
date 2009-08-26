@@ -12,8 +12,8 @@ pledgie: 5745
 
 ---
 
-**Author**: [George Ornbo][]
-**Source Code**: [Github][]
+* **Author**: [George Ornbo][]
+* **Source Code**: [Github][]
 
 ## Compatibility
 
