@@ -6,12 +6,18 @@ layout: default
 		<nav>
 			<ul id="tabs">
 				<li><a href="#documentation" id="documentation-tab">Documentation</a></li>
-				<li><a href="#tickets" id="tickets-tab">Tickets</a></li>
+				{% if page.lighthouse %}<li><a href="#tickets" id="tickets-tab">Tickets</a></li>{% endif %}	
 				<li><a href="#comments" id="comments-tab">Comments</a></li>
-				<li><a href="#donations" id="donations-tab">Donations</a></li>
+				{% if page.pledgie %}<li><a href="#donations" id="donations-tab">Donations</a></li>{% endif %}
 			</ul>
 		</nav>
 		<section id="documentation">
+			{% if page.github_gist %}
+			<aside>
+				<h4>Downloads</h4>
+				<p><a href="{{ page.github_gist }}download">Download the latest version</a></p>
+			</aside>			
+			{% endif %}							
 			{% if page.github_tags %}
 			<aside>
 				<h4>Downloads</h4>
