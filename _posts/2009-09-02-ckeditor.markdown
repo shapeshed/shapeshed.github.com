@@ -34,7 +34,7 @@ Download CKEditor from [the CKEditor website](http://ckeditor.com/). Extract the
 
 The file ext.ckeditor.php must be placed in the /system/extensions/ folder and the lang.ckeditor.php file must be placed in the /system/language/english/ folder of your [ExpressionEngine][] installation.
 
-Log into your control panel and go to CP Home › Admin › Utilities › Extensions Manager. Activate the extension. You may set preferences here and set CKEditor configuration. 
+Log into your control panel and go to CP Home &raquo; Admin &raquo; Utilities &raquo; Extensions Manager. Activate the extension. You may set preferences here and set CKEditor configuration. 
 
 Refer to [the documentation](http://docs.fckeditor.net/CKEditor_3.x/Developers_Guide) for more information on configuration options. 
 
