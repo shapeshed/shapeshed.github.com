@@ -4,7 +4,7 @@ meta_keywords: expressionengine, plugin, file, size, gb, mb, kb, human
 meta_description: An ExpressionEngine plugin that shows the size of a file in human readable format
 title: Human Filesize
 summary: Shows the size of a file in human readable format
-categories: expressionengine extensions
+categories: expressionengine plugins
 lighthouse: 30635-human_filesizeee_addon
 github: human_filesize.ee_addon
 github_tags: [1.1, 1.0]
