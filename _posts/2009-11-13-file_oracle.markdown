@@ -11,9 +11,6 @@ github_tags: [0.1.0]
 pledgie: 6976
 
 ---
-
-# File Oracle - Provides comprehensive information on a file
-
 **Author**: [George Ornbo][]
 **Source**: [Github][]
 
