@@ -7,7 +7,7 @@ summary: Shows a copyright notice in ExpressionEngine Templates
 categories: expressionengine plugins
 lighthouse: 35751-copyrightee_addon
 github: copyright.ee_addon
-github_tags: [1.0, 2.0.0]
+github_tags: [2.0.0, 1.0]
 pledgie: 5741
 
 ---
