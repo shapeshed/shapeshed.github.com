@@ -7,7 +7,7 @@ summary: Shows a copyright notice in ExpressionEngine Templates
 categories: expressionengine plugins
 lighthouse: 35751-copyrightee_addon
 github: copyright.ee_addon
-github_tags: [1.0]
+github_tags: [1.0, 2.0.0]
 pledgie: 5741
 
 ---
@@ -17,7 +17,7 @@ pledgie: 5741
 
 ## Compatibility
 
-* ExpressionEngine Version 1.6.x
+* ExpressionEngine Version 1.6.x (1.x.x releases), ExpressionEngine Version 2.0.x (2.x.x releases).
 * PHP 5.x
 
 ## License
@@ -30,7 +30,9 @@ Copyright is licensed under a [Open Source Initiative - BSD License][] license.
 
 ## Installation
 
-This file pi.copyright.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+For EE 1.6.x the file pi.copyright.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+
+For EE 2.0.0 the copyright folder must be placed in the /system/expressionengine/third_party/ folder in your [ExpressionEngine][] installation.
 
 ## Name
 
