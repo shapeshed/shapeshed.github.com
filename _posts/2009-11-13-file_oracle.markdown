@@ -7,7 +7,7 @@ summary: Provides comprehensive information on a file
 categories: expressionengine plugins
 lighthouse: 41275-file_oracleee_addon
 github: file_oracle.ee_addon
-github_tags: [0.1.0]
+github_tags: [2.0.0, 1.0.0, 0.1.0]
 pledgie: 6976
 
 ---
@@ -16,7 +16,7 @@ pledgie: 6976
 
 ## Compatibility
 
-* ExpressionEngine Version 1.6.x
+* ExpressionEngine Version 1.6.x (1.x.x releases), ExpressionEngine Version 2.0.x (2.x.x releases)
 * PHP 5.x
 
 ## License
@@ -29,7 +29,9 @@ File Oracle is licensed under a [Open Source Initiative - BSD License][] license
 
 ## Installation
 
-This file pi.file_oracle_.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+For EE 1.6.x the file pi.human\_filesize.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+
+For EE 2.0.0 the human\_filesize folder must be placed in the /system/expressionengine/third_party/ folder in your [ExpressionEngine][] installation.
 
 ## Name
 

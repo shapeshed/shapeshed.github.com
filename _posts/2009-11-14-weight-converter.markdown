@@ -7,7 +7,7 @@ summary: Converts a number from one weight to another
 categories: expressionengine plugins
 lighthouse: 41322-weight_converter
 github: weight_converter.ee_addon
-github_tags: [0.1.0]
+github_tags: [2.0.0, 1.0.0, 0.1.0]
 pledgie: 6994
 
 ---
@@ -16,7 +16,7 @@ pledgie: 6994
 
 ## Compatibility
 
-* ExpressionEngine Version 1.6.x
+* ExpressionEngine Version 1.6.x (1.x.x releases), ExpressionEngine Version 2.0.x (2.x.x releases)
 * PHP 5.x
 
 ## License
@@ -29,7 +29,9 @@ Weight Converter is licensed under a [Open Source Initiative - BSD License][] li
 
 ## Installation
 
-This file pi.weight_converter.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+For EE 1.6.x the file pi.weight\_converter.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+
+For EE 2.0.0 the weight\_converter folder must be placed in the /system/expressionengine/third_party/ folder in your [ExpressionEngine][] installation.
 
 ## Name
 
